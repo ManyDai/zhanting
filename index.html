@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <title></title>
+    <link href="css/animate.min.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style type="text/css">
+		html,body{height: 100%;}
+    </style>
+</head>
+<body>
+	<div class=" index-container box full border-box none">
+		<a href="template/stepone.html" class="block border-box animated bounceInLeft" style='background-image:url(img/bac1.jpg)'>
+			<div class="left index-item relative vertical-cell text_center">
+				<p class="inline_block">第一篇章<br>STEP ONE</p>
+				<img src="img/l-trig.png" alt="" class="absolute l-trig trig">
+			</div>
+		</a>
+		<a href="template/steptwo.html" class="block border-box animated bounceInRight" style='background-image:url(img/bac2.jpg)'>
+			<div class="right index-item relative vertical-cell text_center">
+				<p class="inline_block">第二篇章<br>STEP TWO</p>
+				<img src="img/r-trig.png" alt="" class="absolute r-trig trig">
+			</div>
+		</a>
+		<a href="template/stepthree.html" class="block border-box animated bounceInLeft" style='background-image:url(img/bac3.jpg)'>
+			<div class="left index-item relative vertical-cell text_center">
+				<p class="inline_block">第三篇章<br>STEP THREE</p>
+				<img src="img/l-trig.png" alt="" class="absolute l-trig trig">
+			</div>
+		</a>
+	</div>
+
+	<div class="fixed full lunch-wrap box box box-vertical init-pos fadeInUp animated">
+		<img src="img/logo.png" alt="" class="logo block animated">
+	</div>
+	<script src='js/lib/jquery-2.1.4.js'></script>
+	<script>
+	var flag=true;
+	var timer=setInterval(function()
+		{
+			if(flag){
+				$('.logo').addClass('opacity');
+				flag=false;
+			}else{
+				$('.logo').removeClass('opacity');
+				flag=true;
+			}
+		}, 1000)
+		setTimeout(function()
+		{
+			clearInterval(timer);
+			$('.lunch-wrap').addClass('zoomOut').on("webkitAnimationEnd", function(){
+				$('.lunch-wrap').addClass('none');
+				
+			});
+			$('.index-container').removeClass('none');
+		}, 5000)
+	</script>
+</body>
+</html>

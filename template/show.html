@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <title></title>
+    <link href="../css/animate.min.css" rel="stylesheet"/>
+    <link href="../css/common.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <link href="../css/base2.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="header fixed oevrflow text_center">
+		<a href="" class='back left'><img src="../img/back.png" alt=""></a>
+		<a href="../index.html" class='back right'><img src="../img/house.png" alt=""></a>
+		<div class="absolute full text-header-wrap">
+			<p class='inline_block'>行业贡献<br><span class="english">Industry Contribution</span></p>
+		</div>
+	</div>
+	
+
+	<div class="content-wrap">
+		<ul class="pic-list overflow">
+			<li class="left relative box box-vertical fadeIn animated">
+				<div class="inner-pic overflow">
+					<img src="../img/bac2.jpg" alt="">
+				</div>
+			</li>
+			<li class="left relative box box-vertical fadeIn animated">
+				<div class="inner-pic overflow">
+					<img src="../img/bac1.jpg" alt="">
+				</div>
+			</li>
+			<li class="left relative box box-vertical fadeIn animated">
+				<div class="inner-pic overflow">
+					<img src="../img/ren.png" alt="">
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="show-tab fixed clear-fixed">
+		<a href="" class="left vertical-cell active"><p class='inline_block'>核心专利<br><span class="white english">CORE PATENTS</span></p></a>
+		<a href="" class="left vertical-cell"><p class='inline_block'>行业地位<br><span class="white english">INDUSTRY POSITION</span></p></a>
+	</div>
+
+	<!-- 查看大图 -->
+	<div class="fixed pho none overflow-y">
+		<img src="" alt="" class='pho-img animated zoomIn' style='display:block'>
+	</div>
+	<script type="text/javascript" src="../js/lib/jquery-2.1.4.js"></script>
+	<script>
+		$('.inner-pic img').on('click',function()
+		{
+			var inde=$(this).attr('src');
+			$('.pho').removeClass('none');
+			$('.pho-img').attr('src',inde);
+		});
+		$('.pho').on('click',function(){
+			$(this).addClass('none');
+		});
+		// $('.pho-img').on('touchstart',function(event){
+		// 	event.stopPropagation()
+		// 	event.preventDefault();
+		// })
+	</script>
+</body>
+</html>

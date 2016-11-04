@@ -1,0 +1,53 @@
+﻿*{margin:0;padding:0;}
+body{font-family: '微软雅黑';font-size: 22px}
+li{list-style: none}
+a{text-decoration: none;color: inherit;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed{position: fixed;}
+.overflow{overflow: hidden}
+.left{float:left}
+.right{float: right}
+.block{display: block}
+.inline_block{display: inline-block;}
+.border_yuan{border-radius: 100%}
+.vertical_top{vertical-align: top}
+.vertical_middle{vertical-align: middle}
+.text_center{text-align: center;}
+.text_right{text-align: right;}
+.text_left{text-align: left;}
+.full{height: 100%;width:100%}
+input{outline: none;border: none;font-family: '微软雅黑';font-size: 0.9em;}
+img{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);border:none;outline: none}
+a{border:none;outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.no_select{-webkit-user-select:none; }
+input,button{outline: none}
+.box{display:-webkit-box;}
+.none{display: none !important}
+.opacity{opacity: 0}
+.overflow-y{overflow-y:scroll ;-webkit-overflow-scrolling : touch;}
+.overflow-x{overflow-x:scroll ;-webkit-overflow-scrolling : touch;}
+input[type="button"],input[type="submit"],input[type="reset"]{
+-webkit-appearance: none;
+}
+.box{
+	display: -webkit-box;
+}
+.box-vertical{
+	-webkit-box-align:vertical;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+}
+.wm{
+	width: 100%;
+}
+.hm{
+	height: 100%;
+}
+.cursor{
+	cursor: pointer;
+}
+.init-pos{
+	left: 0;
+	top: 0;
+}
